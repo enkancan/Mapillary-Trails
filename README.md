@@ -20,16 +20,22 @@ Comprehensive analysis notebook for understanding user contributions and behavio
   - Quad-tree division algorithm to bypass API's 1000-image limit
   - Automatic retry mechanism for robust data collection
   - Multi-format support (JPEG, WebP, PNG)
+  - 
+<img width="1589" height="798" alt="output" src="https://github.com/user-attachments/assets/665cb1a9-8613-40df-acf3-3d64d9a738b8" />
 
 - **User Contribution Analysis**:
   - Track individual user upload patterns
   - Identify most active contributors in the region
   - Analyze contribution frequency and coverage
+  - 
+<img width="1589" height="799" alt="output3" src="https://github.com/user-attachments/assets/5689595f-9592-4f8f-8362-efedd93208c3" />
 
 - **Temporal Analysis**:
   - Year-by-year coverage evolution
   - Identify data collection gaps and trends
   - Track user activity over time
+  - 
+![Uploading output1.png…]()
 
 - **Spatial Analysis**:
   - Filter by custom polygon boundaries
@@ -48,6 +54,11 @@ Generate engaging animations to present user movement patterns:
   - Mobile-optimized vertical layout
   - Aesthetic map tiles (CartoDB Positron)
   - Ready for social media and presentations
+ 
+
+![map_street_SMART](https://github.com/user-attachments/assets/da908389-43ab-48b3-a8e3-4fb93c7a3ee0)
+
+
 
 - **Smart Route Analysis**:
   - Greedy Nearest Neighbor sorting for logical route progression
@@ -175,3 +186,4 @@ The Karaköy polygon boundaries are pre-configured in both notebooks, making it 
 ## License
 
 MIT License
+
