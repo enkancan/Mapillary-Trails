@@ -14,7 +14,7 @@ Comprehensive analysis notebook for understanding user contributions and behavio
   - Quad-tree division algorithm to bypass API's 1000-image limit of Mapillary
   - Automatic retry mechanism for robust data collection
   - Multi-format support (JPEG, WebP, PNG)
-  - 
+    
 <img width="1589" height="798" alt="output" src="https://github.com/user-attachments/assets/665cb1a9-8613-40df-acf3-3d64d9a738b8" />
 
 - **User Contribution Analysis**:
@@ -22,7 +22,7 @@ Comprehensive analysis notebook for understanding user contributions and behavio
   - Identify most active contributors in the region
   - Analyze contribution frequency and coverage
   - Multi-user route comparison with color coding
-  - 
+    
 <img width="1589" height="799" alt="output3" src="https://github.com/user-attachments/assets/5689595f-9592-4f8f-8362-efedd93208c3" />
 
 - **Temporal Analysis**:
@@ -141,5 +141,6 @@ The Karaköy polygon boundaries are pre-configured in both notebooks, making it 
 ## License
 
 MIT License
+
 
 
