@@ -4,20 +4,14 @@ A comprehensive toolkit for analyzing Mapillary user contributions, movement pat
 
 ## Purpose
 
-This toolkit is designed for:
-- **User Behavior Analysis**: Track what users upload and their mapping patterns
-- **Route Analysis**: Visualize and analyze user trajectories and coverage areas
-- **Interest Mapping**: Identify user-specific points of interest and movement behaviors
-- **Data Collection**: Systematically gather Mapillary data for research and analysis
-- **Presentation-Ready Outputs**: Generate publication-quality maps, animations, and reports
-
+This toolkit is designed for user behavior analysis, enabling systematic tracking of what users upload and how their mapping patterns evolve over time. It supports **route analysis by visualizing and evaluating user trails and spatial coverage areas. Through interest mapping, it identifies user-specific points of interest and recurring movement behaviors**. It also facilitates structured data collection, allowing Mapillary data to be gathered consistently for research and analysis purposes. Finally, it produces presentation-ready outputs, including publication-quality maps and animations to present.
 ## Features
 
 ### Mapillary.ipynb - Data Collection & User Analytics
 Comprehensive analysis notebook for understanding user contributions and behaviors:
 
 - **Bulk Image Download**: Systematically collect all Mapillary images in your study area
-  - Quad-tree division algorithm to bypass API's 1000-image limit
+  - Quad-tree division algorithm to bypass API's 1000-image limit of Mapillary
   - Automatic retry mechanism for robust data collection
   - Multi-format support (JPEG, WebP, PNG)
   - 
@@ -27,6 +21,7 @@ Comprehensive analysis notebook for understanding user contributions and behavio
   - Track individual user upload patterns
   - Identify most active contributors in the region
   - Analyze contribution frequency and coverage
+  - Multi-user route comparison with color coding
   - 
 <img width="1589" height="799" alt="output3" src="https://github.com/user-attachments/assets/5689595f-9592-4f8f-8362-efedd93208c3" />
 
@@ -34,18 +29,10 @@ Comprehensive analysis notebook for understanding user contributions and behavio
   - Year-by-year coverage evolution
   - Identify data collection gaps and trends
   - Track user activity over time
-  - 
-![Uploading output1.png…]()
-
-- **Spatial Analysis**:
-  - Filter by custom polygon boundaries
-  - OSM building and road context overlays
-  - Multi-user route comparison with color coding
 
 - **Data Management**:
   - Automatic CSV export with full metadata (coordinates, timestamps, usernames)
   - User-specific folder organization
-  - Publication-quality PDF outputs
 
 ### GIF_Street.ipynb - Route Visualization & Animation
 Generate engaging animations to present user movement patterns:
@@ -58,23 +45,11 @@ Generate engaging animations to present user movement patterns:
 
 ![map_street_SMART](https://github.com/user-attachments/assets/da908389-43ab-48b3-a8e3-4fb93c7a3ee0)
 
-
-
 - **Smart Route Analysis**:
   - Greedy Nearest Neighbor sorting for logical route progression
   - Meter-based distance calculation for accurate paths
   - Synchronized map + street view animation
-
-- **Presentation Features**:
-  - Gradient path visualization showing progression
-  - Multi-layer markers with glow effects
-  - Coordinate display for each image
-  - Customizable frame count and duration
-
-- **Multiple Animation Modes**:
   - User-specific route animations
-  - Polygon-based area coverage
-  - Linear route-based animations
 
 ## Requirements
 
@@ -100,10 +75,10 @@ The `sample_data/` folder contains 8 sample images from the Karaköy area (Istan
 
 **Step 1: Configure Data Collection**
 - Set your Mapillary API token
-- Define BBOX coordinates for your study area
+- Define BBOX coordinates for your study area 
 - Optionally define polygon for precise area filtering
 
-**Step 2: Run Analysis Pipeline**
+**Step 2: The Pipeline**
 Execute cells sequentially to:
 1. Download all images in region with full metadata
 2. Filter by polygon boundary (optional)
@@ -139,27 +114,7 @@ Choose from three visualization modes:
 **Output:**
 - High-quality GIF animations showing user movement patterns
 - Presentation-ready visualizations for reports and papers
-- Mobile-optimized 9:16 format for social media outreach
 
-## Use Cases & Applications
-
-### Academic Research
-- **Urban Studies**: Analyze street-level data collection patterns in cities
-- **Citizen Science**: Study volunteer mapper behavior and contribution patterns
-- **Geographic Information Science**: Research crowdsourced mapping methodologies
-- **Human Geography**: Investigate spatial behavior and movement patterns
-
-### Data Analysis Projects
-- **Coverage Assessment**: Identify gaps in street-level imagery coverage
-- **Contributor Profiling**: Understand mapper motivations and interests
-- **Temporal Studies**: Track how mapping coverage evolves over time
-- **Comparative Analysis**: Compare user behaviors across different regions
-
-### Presentations & Outreach
-- **Conference Presentations**: Publication-quality maps and animations
-- **Social Media**: Mobile-optimized 9:16 animations for public engagement
-- **Reports & Papers**: High-resolution visualizations for academic publications
-- **Data Journalism**: Visual storytelling with street-level imagery data
 
 ## Study Area: Karaköy, Istanbul
 
@@ -186,4 +141,5 @@ The Karaköy polygon boundaries are pre-configured in both notebooks, making it 
 ## License
 
 MIT License
+
 
